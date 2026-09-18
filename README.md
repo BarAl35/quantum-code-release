@@ -10,16 +10,15 @@ This repository contains **installers and release notes only**. There is **no so
 
 **Recommended:** **[GitHub Releases](https://github.com/BarAl35/quantum-code-release/releases)** (latest tag — Windows + macOS assets).
 
-Or browse branch **`release/v0.1.0`**:
+**Current Windows build:** [`downloads/v0.1.2/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.2/windows) (`.exe`, `.msi`).
 
 | Platform | Path |
 | --- | --- |
-| Windows | [`downloads/v0.1.0/windows/`](https://github.com/BarAl35/quantum-code-release/tree/release/v0.1.0/downloads/v0.1.0/windows) — `.exe` or `.msi` |
-| macOS | [`downloads/v0.1.0/macos/`](https://github.com/BarAl35/quantum-code-release/tree/release/v0.1.0/downloads/v0.1.0/macos) — `.dmg` |
+| Windows (latest) | [`downloads/v0.1.2/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.2/windows) |
+| Windows (legacy) | [`downloads/v0.1.0/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.0/windows) |
+| macOS | `.dmg` on **Releases** when published (`downloads/v0.1.2/macos/`) |
 
-Verify with `SHA256SUMS.txt` in the same release or branch root.
-
-Verify downloads with `SHA256SUMS.txt` in the same release (when provided).
+Verify with `SHA256SUMS.txt` in the repo root.
 
 ---
 
