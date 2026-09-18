@@ -8,14 +8,16 @@ This repository contains **installers and release notes only**. There is **no so
 
 ## Download
 
-Go to **[Releases](https://github.com/BarAl35/quantum-code-release/releases)** and download the installer for your operating system.
+**Recommended:** **[GitHub Releases](https://github.com/BarAl35/quantum-code-release/releases)** (latest tag — Windows + macOS assets).
 
-| Platform | File (example) |
+Or browse branch **`release/v0.1.0`**:
+
+| Platform | Path |
 | --- | --- |
-| Windows | `Quantum Code_*_x64-setup.exe` |
-| Windows (optional) | `Quantum Code_*_x64_en-US.msi` |
-| macOS | `.dmg` in the release assets |
-| Linux | `.deb` or `.AppImage` in the release assets |
+| Windows | [`downloads/v0.1.0/windows/`](https://github.com/BarAl35/quantum-code-release/tree/release/v0.1.0/downloads/v0.1.0/windows) — `.exe` or `.msi` |
+| macOS | [`downloads/v0.1.0/macos/`](https://github.com/BarAl35/quantum-code-release/tree/release/v0.1.0/downloads/v0.1.0/macos) — `.dmg` |
+
+Verify with `SHA256SUMS.txt` in the same release or branch root.
 
 Verify downloads with `SHA256SUMS.txt` in the same release (when provided).
 
@@ -23,21 +25,21 @@ Verify downloads with `SHA256SUMS.txt` in the same release (when provided).
 
 ## Before you install
 
-1. **Node.js 22 or newer** must be installed and on your **PATH** (`node -v`).
-   - Windows: [https://nodejs.org/](https://nodejs.org/)
-2. Install **Git** if you use Git features inside the app (recommended).
-3. For **Java projects**: JDK 21+ on the machine (the app can guide you; not bundled in v0.1).
+1. **v0.1.1+** installers include **Node** and **JDK 21** (Temurin) — no separate setup for Settings, AI, or Java projects.
+2. Install **Git** only if you use Git inside the app (not bundled; [git-scm.com](https://git-scm.com/download/win)).
+3. **v0.1.0** required Node on PATH; upgrade if Settings never loaded.
 
 ---
 
 ## Windows
 
 1. Download `Quantum Code_*_x64-setup.exe` from Releases.
-2. Run the installer (current-user install; admin usually not required).
-3. Open **Quantum Code** from the Start menu.
-4. If SmartScreen warns about an unknown publisher, choose **More info → Run anyway** (unsigned community build).
+2. **Upgrade from v0.1.0 / v0.1.1:** Quit Quantum Code (check Task Manager — no `Quantum Code` or stray `node` on port 47821). Either run the **new installer** (it replaces the same app id) or uninstall first (below), then install.
+3. Run the installer (current-user install; admin usually not required).
+4. Open **Quantum Code** from the Start menu. Check **About** for version **0.1.2+** if Settings failed on an older build.
+5. If SmartScreen warns about an unknown publisher, choose **More info → Run anyway** (unsigned community build).
 
-Uninstall: **Settings → Apps → Quantum Code**.
+**Uninstall old version:** **Settings → Apps → Installed apps → Quantum Code → Uninstall** (or **Apps → Quantum Code → Uninstall**). Your projects and `~/.aiforge` settings stay on disk; only the app is removed. Then install the latest Release `.exe`.
 
 ---
 
@@ -80,7 +82,7 @@ Bu depoda **yalnızca kurulum dosyaları ve sürüm notları** vardır. **Kaynak
 
 ### İndirme
 
-**[Releases](https://github.com/BarAl35/quantum-code-release/releases)** sayfasından işletim sisteminize uygun dosyayı indirin.
+**[Releases](https://github.com/BarAl35/quantum-code-release/releases)** (Windows + macOS) veya **`release/v0.1.0`** dalındaki `downloads/v0.1.0/windows/` ve `downloads/v0.1.0/macos/` klasörleri.
 
 ### Kurulum öncesi
 

@@ -1,0 +1,2 @@
+b35a4035a6d67d315b3b2d21baff8beec53cf6c733d8ea7dfa6c1810b6b5f185  downloads/v0.1.2/windows/Quantum Code_0.1.2_x64_en-US.msi
+0616be01e3281c2255033a3c933f6e40737b020d291292030cb5798bfa62e2d3  downloads/v0.1.2/windows/Quantum Code_0.1.2_x64-setup.exe
