@@ -8,7 +8,7 @@ This repository contains **installers and release notes only**. There is **no so
 
 ## Download
 
-**Recommended:** **[GitHub Releases](https://github.com/BarAl35/quantum-code-release/releases)** (latest tag — Windows + macOS assets).
+**Recommended:** **[Release v0.1.3](https://github.com/BarAl35/quantum-code-release/releases/tag/v0.1.3)** (Windows `.exe` / `.msi`; macOS when added).
 
 **Current Windows build:** [`downloads/v0.1.3/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.3/windows) (`.exe`, `.msi`).
 
