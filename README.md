@@ -8,15 +8,15 @@ This repository contains **installers and release notes only**. There is **no so
 
 ## Download
 
-**Recommended:** **[Release v0.1.2](https://github.com/BarAl35/quantum-code-release/releases/tag/v0.1.2)** (Windows `.exe` / `.msi`; macOS when added).
+**Recommended:** **[GitHub Releases](https://github.com/BarAl35/quantum-code-release/releases)** (latest tag — Windows + macOS assets).
 
-**Current Windows build:** [`downloads/v0.1.2/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.2/windows) (`.exe`, `.msi`).
+**Current Windows build:** [`downloads/v0.1.3/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.3/windows) (`.exe`, `.msi`).
 
 | Platform | Path |
 | --- | --- |
-| Windows (latest) | [`downloads/v0.1.2/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.2/windows) |
+| Windows (latest) | [`downloads/v0.1.3/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.3/windows) |
 | Windows (legacy) | [`downloads/v0.1.0/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.0/windows) |
-| macOS | `.dmg` on **Releases** when published (`downloads/v0.1.2/macos/`) |
+| macOS | `.dmg` on **Releases** when published (`downloads/v0.1.3/macos/`) |
 
 Verify with `SHA256SUMS.txt` in the repo root.
 
@@ -35,7 +35,7 @@ Verify with `SHA256SUMS.txt` in the repo root.
 1. Download `Quantum Code_*_x64-setup.exe` from Releases.
 2. **Upgrade from v0.1.0 / v0.1.1:** Quit Quantum Code (check Task Manager — no `Quantum Code` or stray `node` on port 47821). Either run the **new installer** (it replaces the same app id) or uninstall first (below), then install.
 3. Run the installer (current-user install; admin usually not required).
-4. Open **Quantum Code** from the Start menu. Check **About** for version **0.1.2+** if Settings failed on an older build.
+4. Open **Quantum Code** from the Start menu. Check **About** for version **0.1.3+** if Settings failed on an older build.
 5. If SmartScreen warns about an unknown publisher, choose **More info → Run anyway** (unsigned community build).
 
 **Uninstall old version:** **Settings → Apps → Installed apps → Quantum Code → Uninstall** (or **Apps → Quantum Code → Uninstall**). Your projects and `~/.aiforge` settings stay on disk; only the app is removed. Then install the latest Release `.exe`.

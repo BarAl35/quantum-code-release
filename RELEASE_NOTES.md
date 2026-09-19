@@ -1,12 +1,8 @@
-# Quantum Code v0.1.2
+# Quantum Code v0.1.3
 
 ## Downloads
 
-- **Windows:** `downloads/v0.1.2/windows/` — `.exe` and `.msi`
-- **macOS:** `downloads/v0.1.2/macos/` — `.dmg` (when published)
+- **Windows:** `downloads/v0.1.3/windows/`
+- **macOS:** `downloads/v0.1.3/macos/`
 
-Bundled **Node** in the installer (no separate Node install for Settings/AI). **Git** is optional. Java projects can use bundled JDK or download from New project.
-
-## Legacy v0.1.0
-
-Older Windows builds under `downloads/v0.1.0/windows/` require Node 22+ on PATH. Prefer **v0.1.2**.
+v0.1.1+ includes Node and JDK 21 in the installer. Git is optional ([git-scm.com](https://git-scm.com/)).
