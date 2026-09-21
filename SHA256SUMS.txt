@@ -1,2 +1,2 @@
-542fcda0ec8e22a9bd808ca7da43c46f007d2813608b8b4ef8b78c3177bb8742  downloads/v0.1.3/windows/Quantum Code_0.1.3_x64_en-US.msi
-416df7bcbc6b53576faf3ba54914ba16a587826a7cce5ae761f311b46dc9db3d  downloads/v0.1.3/windows/Quantum Code_0.1.3_x64-setup.exe
+29916ef7f8a4754f48bfa97d75af93f8431a6591f1f05c0636079ec800db659b  downloads/v0.1.4/windows/Quantum Code_0.1.4_x64_en-US.msi
+ce706803a915c2312a8460698eb733dec76849ad7a9801f44416fd4b9c415585  downloads/v0.1.4/windows/Quantum Code_0.1.4_x64-setup.exe
