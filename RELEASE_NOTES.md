@@ -1,8 +1,8 @@
-# Quantum Code v0.1.3
+# Quantum Code v0.1.4
 
 ## Downloads
 
-- **Windows:** `downloads/v0.1.3/windows/`
-- **macOS:** `downloads/v0.1.3/macos/`
+- **Windows:** `downloads/v0.1.4/windows/`
+- **macOS:** `downloads/v0.1.4/macos/`
 
 v0.1.1+ includes Node and JDK 21 in the installer. Git is optional ([git-scm.com](https://git-scm.com/)).
