@@ -1,3 +1,4 @@
+
 # Quantum Code v1.1.4
 
 Patch: GitHub/GitLab MCP auth and Windows upgrade when `node.exe` is locked.
@@ -13,8 +14,9 @@ Patch: GitHub/GitLab MCP auth and Windows upgrade when `node.exe` is locked.
 - **Windows:** `downloads/v1.1.4/windows/`
 - **macOS:** `downloads/v1.1.4/macos/` (build on a Mac or Actions)
 
+
 Installers include **Node** and **JDK 21**. Git is optional ([git-scm.com](https://git-scm.com/)).
 
 ## Upgrade
-
 Quit Quantum Code if it is running (Task Manager: `Quantum Code` / stray `node`), then run the new installer. Confirm **About → Version 1.1.4**.
+
