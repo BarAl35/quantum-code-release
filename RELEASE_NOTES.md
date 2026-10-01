@@ -1,15 +1,19 @@
-# Quantum Code v1.1.1
+# Quantum Code v1.1.2
 
-Installers in `artifacts/` (upload these to GitHub Releases — do not commit large binaries to git if avoidable).
+Patch release: first-install engine finds the bundled `engine.mjs` under the Windows installer layout.
 
-## Requirements
+## Fixes
 
-- Node.js 22+ on PATH
-- Git recommended; JDK 21+ for Java projects
+- **Bundled engine path** — installed apps look up `resources/engine.mjs` (and bundled Node under `resources/nodejs/`), matching the NSIS/MSI layout. Fresh installs no longer show “Bundled engine.mjs not found” when the file is already on disk.
+- **GitHub release script** — missing tags no longer abort create; installer paths with spaces upload correctly.
 
-## Files
+## Downloads
 
-- `msi/Quantum Code_1.1.1_x64_en-US.msi`
-- `nsis/Quantum Code_1.1.1_x64-setup.exe`
+- **Windows:** `downloads/v1.1.2/windows/`
+- **macOS:** `downloads/v1.1.2/macos/` (build on a Mac or Actions)
 
-See README.md for end-user install steps.
+Installers include **Node** and **JDK 21**. Git is optional ([git-scm.com](https://git-scm.com/)).
+
+## Upgrade
+
+Quit Quantum Code fully, then run the new installer. Confirm **About → Version 1.1.2**.
