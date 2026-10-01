@@ -1,19 +1,20 @@
-# Quantum Code v1.1.2
+# Quantum Code v1.1.4
 
-Patch release: first-install engine finds the bundled `engine.mjs` under the Windows installer layout.
+Patch: GitHub/GitLab MCP auth and Windows upgrade when `node.exe` is locked.
 
 ## Fixes
 
-- **Bundled engine path** — installed apps look up `resources/engine.mjs` (and bundled Node under `resources/nodejs/`), matching the NSIS/MSI layout. Fresh installs no longer show “Bundled engine.mjs not found” when the file is already on disk.
-- **GitHub release script** — missing tags no longer abort create; installer paths with spaces upload correctly.
+- **GitHub MCP** — resolve `${GITHUB_TOKEN}` / strip accidental `Bearer` paste so Connect no longer returns “Authorization header is badly formatted”
+- **GitLab MCP** — default `+ gitlab` uses `@zereight/mcp-gitlab` with `GITLAB_TOKEN` (official `/api/v4/mcp` is OAuth-only and rejects PATs)
+- **Windows installer** — NSIS pre-install kills Quantum Code + bundled engine `node.exe` so upgrades are not blocked on `resources\nodejs\node.exe`
 
 ## Downloads
 
-- **Windows:** `downloads/v1.1.2/windows/`
-- **macOS:** `downloads/v1.1.2/macos/` (build on a Mac or Actions)
+- **Windows:** `downloads/v1.1.4/windows/`
+- **macOS:** `downloads/v1.1.4/macos/` (build on a Mac or Actions)
 
 Installers include **Node** and **JDK 21**. Git is optional ([git-scm.com](https://git-scm.com/)).
 
 ## Upgrade
 
-Quit Quantum Code fully, then run the new installer. Confirm **About → Version 1.1.2**.
+Quit Quantum Code if it is running (Task Manager: `Quantum Code` / stray `node`), then run the new installer. Confirm **About → Version 1.1.4**.
