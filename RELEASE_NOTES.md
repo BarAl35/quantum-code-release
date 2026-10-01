@@ -1,19 +1,21 @@
-# Quantum Code v1.1.2
+# Quantum Code v1.1.3
 
-Patch release: first-install engine finds the bundled `engine.mjs` under the Windows installer layout.
+GitLab connections + stronger Cucumber runs from the workbench.
 
-## Fixes
+## Highlights
 
-- **Bundled engine path** — installed apps look up `resources/engine.mjs` (and bundled Node under `resources/nodejs/`), matching the NSIS/MSI layout. Fresh installs no longer show “Bundled engine.mjs not found” when the file is already on disk.
-- **GitHub release script** — missing tags no longer abort create; installer paths with spaces upload correctly.
+- **GitLab token** in Settings → Connections (`GITLAB_TOKEN`) for Open MR when origin is GitLab
+- **GitLab MCP** preset — `https://gitlab.com/api/v4/mcp` (same idea as GitHub Copilot MCP); Connect via OAuth or token
+- **Cucumber / BDD** — Run feature discovers `src/features/**/steps`, enables `tsx` for TypeScript steps, and prints a tip when steps are Undefined
+- **Anthropic (Claude)** Settings note: use Console API keys for company use (not Claude.ai browser login)
 
 ## Downloads
 
-- **Windows:** `downloads/v1.1.2/windows/`
-- **macOS:** `downloads/v1.1.2/macos/` (build on a Mac or Actions)
+- **Windows:** `downloads/v1.1.3/windows/`
+- **macOS:** `downloads/v1.1.3/macos/` (build on a Mac or Actions)
 
 Installers include **Node** and **JDK 21**. Git is optional ([git-scm.com](https://git-scm.com/)).
 
 ## Upgrade
 
-Quit Quantum Code fully, then run the new installer. Confirm **About → Version 1.1.2**.
+Quit Quantum Code fully, then run the new installer. Confirm **About → Version 1.1.3**.
