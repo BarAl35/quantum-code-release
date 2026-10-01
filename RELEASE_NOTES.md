@@ -1,21 +1,15 @@
-# Quantum Code v1.1.0
+# Quantum Code v1.1.1
 
-Command Center + multi-workspace agents, worktrees, and smoother Act approvals.
+Installers in `artifacts/` (upload these to GitHub Releases — do not commit large binaries to git if avoidable).
 
-## Highlights
+## Requirements
 
-- **Ask AI Command Center** — Plan → Act → Verify phase chips and timeline
-- **Explain Project** + architecture layers / main flow
-- **Issue → code** (Jira / GitHub) and **AI Diff Review** cards
-- **QA packs deepen** — Verify failed → heal / pack / pipeline next actions
-- **Agents strip** — parallel Ask across open projects with Cancel
-- **Git worktrees** — list linked worktrees and Open as project
-- **Auto-approve file writes** on by default (terminal / MCP stay opt-in)
-- Explorer folder icons by kind (source / config / package)
+- Node.js 22+ on PATH
+- Git recommended; JDK 21+ for Java projects
 
-## Downloads
+## Files
 
-- **Windows:** `downloads/v1.1.0/windows/`
-- **macOS:** `downloads/v1.1.0/macos/` (build on a Mac or Actions `publish-public-release`)
+- `msi/Quantum Code_1.1.1_x64_en-US.msi`
+- `nsis/Quantum Code_1.1.1_x64-setup.exe`
 
-Installers include **Node** and **JDK 21**. Git is optional ([git-scm.com](https://git-scm.com/)).
+See README.md for end-user install steps.
