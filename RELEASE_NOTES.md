@@ -1,8 +1,11 @@
+
 # Quantum Code v1.1.3
 
 GitLab connections + stronger Cucumber runs from the workbench.
 
-## Highlights
+
+## Fixes
+
 
 - **GitLab token** in Settings → Connections (`GITLAB_TOKEN`) for Open MR when origin is GitLab
 - **GitLab MCP** preset — `https://gitlab.com/api/v4/mcp` (same idea as GitHub Copilot MCP); Connect via OAuth or token
