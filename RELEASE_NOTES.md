@@ -1,21 +1,19 @@
-# Quantum Code v1.1.0
+# Quantum Code v1.1.2
 
-Command Center + multi-workspace agents, worktrees, and smoother Act approvals.
+Patch release: first-install engine finds the bundled `engine.mjs` under the Windows installer layout.
 
-## Highlights
+## Fixes
 
-- **Ask AI Command Center** — Plan → Act → Verify phase chips and timeline
-- **Explain Project** + architecture layers / main flow
-- **Issue → code** (Jira / GitHub) and **AI Diff Review** cards
-- **QA packs deepen** — Verify failed → heal / pack / pipeline next actions
-- **Agents strip** — parallel Ask across open projects with Cancel
-- **Git worktrees** — list linked worktrees and Open as project
-- **Auto-approve file writes** on by default (terminal / MCP stay opt-in)
-- Explorer folder icons by kind (source / config / package)
+- **Bundled engine path** — installed apps look up `resources/engine.mjs` (and bundled Node under `resources/nodejs/`), matching the NSIS/MSI layout. Fresh installs no longer show “Bundled engine.mjs not found” when the file is already on disk.
+- **GitHub release script** — missing tags no longer abort create; installer paths with spaces upload correctly.
 
 ## Downloads
 
-- **Windows:** `downloads/v1.1.0/windows/`
-- **macOS:** `downloads/v1.1.0/macos/` (build on a Mac or Actions `publish-public-release`)
+- **Windows:** `downloads/v1.1.2/windows/`
+- **macOS:** `downloads/v1.1.2/macos/` (build on a Mac or Actions)
 
 Installers include **Node** and **JDK 21**. Git is optional ([git-scm.com](https://git-scm.com/)).
+
+## Upgrade
+
+Quit Quantum Code fully, then run the new installer. Confirm **About → Version 1.1.2**.
