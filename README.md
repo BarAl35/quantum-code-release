@@ -8,16 +8,16 @@ This repository contains **installers and release notes only**. There is **no so
 
 ## Download
 
-**Recommended:** **[Release v1.1.1](https://github.com/BarAl35/quantum-code-release/releases/tag/v1.1.1)** (Windows `.exe` / `.msi`; macOS when added).
+**Recommended:** **[Release v1.1.2](https://github.com/BarAl35/quantum-code-release/releases/tag/v1.1.2)** (Windows `.exe` / `.msi`; macOS when added).
 
-**Current Windows build:** [`downloads/v1.1.1/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.1/windows) (`.exe`, `.msi`).
+**Current Windows build:** [`downloads/v1.1.2/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.2/windows) (`.exe`, `.msi`).
 
 | Platform | Path |
 | --- | --- |
-| Windows (latest) | [`downloads/v1.1.1/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.1/windows) |
-| Windows (previous) | [`downloads/v1.1.0/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.0/windows) |
+| Windows (latest) | [`downloads/v1.1.2/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.2/windows) |
+| Windows (previous) | [`downloads/v1.1.1/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.1/windows) |
 | Windows (legacy) | [`downloads/v0.1.0/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.0/windows) |
-| macOS | `.dmg` on **Releases** when published (`downloads/v1.1.1/macos/`) |
+| macOS | `.dmg` on **Releases** when published (`downloads/v1.1.2/macos/`) |
 
 Verify with `SHA256SUMS.txt` in the repo root.
 
@@ -25,9 +25,9 @@ Verify with `SHA256SUMS.txt` in the repo root.
 
 ## Before you install
 
-1. **You do not need Node.js or a JDK on your PC.** **v0.1.1+ / v1.1.1** installers ship a private **Node** runtime and **JDK 21** (Temurin) inside the app — Settings, Ask AI, and Java projects use those.
+1. **You do not need Node.js or a JDK on your PC.** **v0.1.1+ / v1.1.2** installers ship a private **Node** runtime and **JDK 21** (Temurin) inside the app — Settings, Ask AI, and Java projects use those.
 2. Install **Git** only if you use Git inside the app (not bundled; [git-scm.com](https://git-scm.com/download/win)).
-3. **Do not use v0.1.0** — that old build expected Node on PATH, so Settings / Open Folder often failed. Always install **v1.1.1+** from Releases.
+3. **Do not use v0.1.0** — that old build expected Node on PATH, so Settings / Open Folder often failed. Always install **v1.1.2+** from Releases.
 
 ---
 
@@ -36,7 +36,7 @@ Verify with `SHA256SUMS.txt` in the repo root.
 1. Download `Quantum Code_*_x64-setup.exe` from Releases.
 2. **Upgrade from v0.1.0 / v0.1.1:** Quit Quantum Code (check Task Manager — no `Quantum Code` or stray `node` on port 47821). Either run the **new installer** (it replaces the same app id) or uninstall first (below), then install.
 3. Run the installer (current-user install; admin usually not required).
-4. Open **Quantum Code** from the Start menu. Check **About** for version **1.1.1+** if Settings failed on an older build.
+4. Open **Quantum Code** from the Start menu. Check **About** for version **1.1.2+** if Settings failed on an older build.
 5. If SmartScreen warns about an unknown publisher, choose **More info → Run anyway** (unsigned community build).
 
 **Uninstall old version:** **Settings → Apps → Installed apps → Quantum Code → Uninstall** (or **Apps → Quantum Code → Uninstall**). Your projects and `~/.quantumcode` settings stay on disk; only the app is removed. Existing `.aiforge` settings are migrated on first launch. Then install the latest Release `.exe`.
@@ -86,9 +86,9 @@ Bu depoda **yalnızca kurulum dosyaları ve sürüm notları** vardır. **Kaynak
 
 ### Kurulum öncesi
 
-1. **Node.js veya JDK kurmanız gerekmez** — **v0.1.1+ / v1.1.1** kurulum dosyası kendi Node ve JDK 21’ini taşır.
+1. **Node.js veya JDK kurmanız gerekmez** — **v0.1.1+ / v1.1.2** kurulum dosyası kendi Node ve JDK 21’ini taşır.
 2. Uygulama içi Git için isteğe bağlı **Git**.
-3. **v0.1.0 kullanmayın** (PATH’te Node istiyordu; Settings açılmazdı). **v1.1.1+** indirin.
+3. **v0.1.0 kullanmayın** (PATH’te Node istiyordu; Settings açılmazdı). **v1.1.2+** indirin.
 
 ### Windows
 
