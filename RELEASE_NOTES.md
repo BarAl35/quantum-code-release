@@ -1,22 +1,22 @@
+# Quantum Code v1.1.5
 
-# Quantum Code v1.1.4
-
-Patch: GitHub/GitLab MCP auth and Windows upgrade when `node.exe` is locked.
+Patch: terminal reliability and history, Ask panel resize, Cucumber step loading, and GitLab MCP Windows install races.
 
 ## Fixes
 
-- **GitHub MCP** — resolve `${GITHUB_TOKEN}` / strip accidental `Bearer` paste so Connect no longer returns “Authorization header is badly formatted”
-- **GitLab MCP** — default `+ gitlab` uses `@zereight/mcp-gitlab` with `GITLAB_TOKEN` (official `/api/v4/mcp` is OAuth-only and rejects PATs)
-- **Windows installer** — NSIS pre-install kills Quantum Code + bundled engine `node.exe` so upgrades are not blocked on `resources\nodejs\node.exe`
+- **Terminal** — second tab / pop-out opens fresh (no Console log bleed); `clear` / `cls` clears scrollback; ↑/↓ recalls the last 50 commands; Windows shell stays on reliable `cmd.exe` (PowerShell via `QUANTUM_SHELL` if wanted); common JDK paths on PATH
+- **Ask AI** — drag to resize form vs chat; wider Ask dock defaults so chat is not crushed
+- **package.json** — CodeLens / hover **Run Script** runs `npm run …` in the Terminal
+- **Cucumber / Tests** — merge `cucumber.js` imports with discovered step folders; monorepo package root; brace-glob expand; try `npx -p tsx` when TypeScript steps lack a local `tsx`
+- **GitLab MCP** — per-server isolated npm cache under `~/.quantumcode/mcp-npx-cache` with ENOTEMPTY retry; drop `@latest` to reduce Windows npx races
 
 ## Downloads
 
-- **Windows:** `downloads/v1.1.4/windows/`
-- **macOS:** `downloads/v1.1.4/macos/` (build on a Mac or Actions)
-
+- **Windows:** `downloads/v1.1.5/windows/`
+- **macOS:** `downloads/v1.1.5/macos/` (build on a Mac or Actions)
 
 Installers include **Node** and **JDK 21**. Git is optional ([git-scm.com](https://git-scm.com/)).
 
 ## Upgrade
-Quit Quantum Code if it is running (Task Manager: `Quantum Code` / stray `node`), then run the new installer. Confirm **About → Version 1.1.4**.
 
+Quit Quantum Code if it is running, then run the new installer. Confirm **About → Version 1.1.5**.
