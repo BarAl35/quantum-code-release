@@ -8,7 +8,7 @@ This repository contains **installers and release notes only**. There is **no so
 
 ## Download
 
-**Recommended:** **[Release v1.1.4](https://github.com/BarAl35/quantum-code-release/releases/tag/v1.1.4)** (Windows `.exe` / `.msi`; macOS when added).
+**Recommended:** **[Release v1.1.4](https://github.com/BarAl35/quantum-code-release/releases/tag/v1.1.4)** (Windows `.exe` / `.msi`). **macOS (Apple Silicon):** [Release v1.1.7](https://github.com/BarAl35/quantum-code-release/releases/tag/v1.1.7) (`.dmg`).
 
 **Current Windows build:** [`downloads/v1.1.4/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.4/windows) (`.exe`, `.msi`).
 
@@ -17,7 +17,7 @@ This repository contains **installers and release notes only**. There is **no so
 | Windows (latest) | [`downloads/v1.1.4/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.4/windows) |
 | Windows (previous) | [`downloads/v1.1.3/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.3/windows) |
 | Windows (legacy) | [`downloads/v0.1.0/windows/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v0.1.0/windows) |
-| macOS | `.dmg` on **Releases** when published (`downloads/v1.1.4/macos/`) |
+| macOS (Apple Silicon only) | [`downloads/v1.1.7/macos/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.7/macos) (`Quantum Code_1.1.7_aarch64.dmg`) |
 
 Verify with `SHA256SUMS.txt` in the repo root.
 
@@ -45,9 +45,17 @@ Verify with `SHA256SUMS.txt` in the repo root.
 
 ## macOS
 
-1. Download the `.dmg` from Releases.
-2. Drag **Quantum Code** to Applications.
-3. If Gatekeeper blocks the app, use **Open** from the context menu or allow in **Privacy & Security**.
+> **Apple Silicon only (M1 / M2 / M3 / M4).** Intel Macs are not supported at the moment.
+
+1. Download `Quantum Code_*_aarch64.dmg` from Releases (or [`downloads/v1.1.7/macos/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.7/macos)).
+2. Open the `.dmg` and drag **Quantum Code** to **Applications**.
+3. The app is not notarized, so macOS may say it is "damaged" or "can't be opened". Open **Terminal** and run:
+
+   ```bash
+   xattr -cr "/Applications/Quantum Code.app"
+   ```
+
+4. Open **Quantum Code** from Applications / Launchpad.
 
 ---
 
@@ -99,9 +107,23 @@ Bu depoda **yalnızca kurulum dosyaları ve sürüm notları** vardır. **Kaynak
 
 Kaldırma: **Ayarlar → Uygulamalar → Quantum Code**.
 
-### macOS / Linux
+### macOS
 
-Releases’teki `.dmg`, `.deb` veya `.AppImage` dosyasını kullanın; sistemde Node şart değildir (paketli runtime).
+> **Şu anda yalnızca Apple Silicon (M1 / M2 / M3 / M4) destekleniyor.** Intel Mac desteği yok.
+
+1. Releases’ten (veya [`downloads/v1.1.7/macos/`](https://github.com/BarAl35/quantum-code-release/tree/main/downloads/v1.1.7/macos)) `Quantum Code_*_aarch64.dmg` dosyasını indirin.
+2. `.dmg`’yi açıp **Quantum Code**’u **Applications** (Uygulamalar) klasörüne sürükleyin.
+3. Uygulama notarize edilmediği için macOS “hasarlı” veya “açılamıyor” uyarısı verebilir. **Terminal**’i açıp şunu çalıştırın:
+
+   ```bash
+   xattr -cr "/Applications/Quantum Code.app"
+   ```
+
+4. **Quantum Code**’u Uygulamalar / Launchpad’den açın.
+
+### Linux
+
+Releases’teki `.deb` veya `.AppImage` dosyasını kullanın; sistemde Node şart değildir (paketli runtime).
 
 ### İlk kullanım
 
