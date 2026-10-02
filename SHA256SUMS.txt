@@ -1,2 +1,3 @@
-7db9bdeebee8eb9dde68b83a4f38da6973eea6552c0a6778c5858cebc0028af4  downloads/v1.1.7/windows/Quantum Code_1.1.7_x64_en-US.msi
 9ff300a3c4dc4ed47e90141fa9670b2507e0def773a2d5b89769ea08bb39829e  downloads/v1.1.7/windows/Quantum Code_1.1.7_x64-setup.exe
+7db9bdeebee8eb9dde68b83a4f38da6973eea6552c0a6778c5858cebc0028af4  downloads/v1.1.7/windows/Quantum Code_1.1.7_x64_en-US.msi
+44ab4f725451c7bd92690d23a04dc607aeceb36cffe340e59bbc97969b8352a5  downloads/v1.1.7/macos/Quantum Code_1.1.7_aarch64.dmg
